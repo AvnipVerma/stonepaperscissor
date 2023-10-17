@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+
+        <!-- top box -->
+
+    <div class="container" id="container1">
+        <div class="header">
+            <div class="box">
+                <div class="text">
+                    <div class="rock">ROCK</div>
+                    <div class="paper">PAPER</div>
+                    <div class="scissors">SCISSORS</div>
+                </div>
+                <div class="score">
+                    <div class="overallscore">
+                        <div class="score-text">
+                            <div>Computer</div>
+                            <div>Score</div>
+                        </div>
+                        <div>
+                            <div id="cs">0</div>
+                        </div>
+                    </div>
+                    <div class="overallscore">
+                        <div class="score-text">
+                            <div>Your</div>
+                            <div>Score</div>
+                        </div>
+                        <div>
+                            <div id="ys">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- circle and three black line -->
+
+        <div class="footer" id="foot">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="upper">
+                <div class="blue outer">
+                    <div class="innercirlce">
+                        <img src="fist.png" class="hover" id="fist">
+                    </div>
+                </div>
+                <div class="purple outer">
+                    <div class="innercirlce">
+                        <img src="scissor.png" class="hover" id="scissor">
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="orange outer">
+                    <div class="innercirlce">
+                        <img src="hand.png" class="hover" id="hand">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2 hidden" id="ft2">
+            <div class="left hidden" id="leftd">
+                <div id="youpicked">YOU PICKED</div>
+                <div class="blue outer dist hidden" id="fistwinuser">
+                    <div class="innercirlce">
+                        <img src="fist.png" class="hover" id="fistwin">
+                    </div>
+                </div>
+                <div class="purple outer dist hidden" id="scissorwinuser">
+                    <div class="innercirlce">
+                        <img src="scissor.png" class="hover" id="scissorwin">
+                    </div>
+                </div>
+                <div class="orange outer dist hidden" id="handwinuser">
+                    <div class="innercirlce">
+                        <img src="hand.png" class="hover" id="handwin">
+                    </div>
+                </div>
+            </div>
+
+            <!-- after game and result display -->
+
+            <div class="result hidden" id="result">
+                <h1 id="text1">You Win</h1>
+                <h2 id="text2">&nbspAgainst PC</h2>
+            </div>
+
+            <div id="playbutton" class="playagainbro hidden">Play again</div>
+                    
+                    <div class="right hidden" id="rightd">
+                
+                    <div id="pc-picked">PC Picked</div>
+
+                <div class="blue outer dist hidden" id="fistwinpc">
+                    <div class="innercirlce">
+                        <img src="fist.png" class="hover" id="fistwin">
+                    </div>
+                </div>
+                <div class="purple outer dist hidden" id="scissorwinpc">
+                    <div class="innercirlce">
+                        <img src="scissor.png" class="hover" id="scissorwin">
+                    </div>
+                </div>
+                <div class="orange outer dist hidden" id="handwinpc">
+                    <div class="innercirlce">
+                        <img src="hand.png" class="hover" id="handwin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- celebration page -->
+
+    <div class="container2 hidden" id="cont2">
+        <div class="first">
+            <img src="stars.png">
+            <div class="cup">
+                <img src="cup.png">
+            </div>
+        </div>
+        <div class="second">
+            <img src="hurray.png">
+        </div>
+        <div class="third">
+            <img src="won.png">
+        </div>
+        <div class="play-again" id="playagain">
+            <a href="notnice.html">Play Again</a>
+        </div>
+    </div>
+    <div class="rules hidden" id="rule">
+        <div id="x" class="redcross">
+            <img src="x.png" alt="X">
+        </div>
+
+        <!-- rules -->
+        <div class="instructions">Game Rules<br></div>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.<br><br></li>
+            <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or "rock, paper, scissors."<br><br></li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.<br><br></li>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+            
+        </ul>
+    </div>
+    <div class="button">
+        <button id="btn">RULES</button>
+    </div>
+    <div>
+        <button class="hidden" id="nextbutton">NEXT </button>
+    </div>
+
+    <script src="run.js"></script>
+</body>
+</html>
